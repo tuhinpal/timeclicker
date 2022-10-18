@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Redirect on a link based on video time",
   "main": "src/index.js",
+  "private": false,
   "scripts": {},
   "repository": {
     "type": "git",
