@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      video {
+        height: 98vh;
+        width: 98vw;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="myVideo" controls autoplay>
+      <source src="/fitoor.mp4" type="video/mp4" />
+    </video>
+  </body>
+
+  <script type="module">
+    import timeclicker from "/src/index.js"; // or window.timeclicker
+
+    timeclicker({
+      videoElem: document.getElementById("myVideo"),
+      //   config: [
+      //     "if before 10 sec open https://thetuhin.com/10",
+      //     "if after 10 sec but before 15 sec open https://thetuhin.com/10-15",
+      //     "if after 15 sec open https://thetuhin.com/15",
+      //   ],
+      config: [
+        {
+          unit: "sec", // sec, min
+          before: 10,
+          url: "https://thetuhin.com/10",
+        },
+        {
+          unit: "sec",
+          after: 10,
+          before: 15,
+          url: "https://thetuhin.com/10-15",
+        },
+        {
+          unit: "sec",
+          after: 15,
+          url: "https://thetuhin.com/15",
+        },
+      ],
+    });
+  </script>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "timeclicker",
+  "version": "1.0.0",
+  "description": "Redirect on a link based on video time",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuhinpal/timeclicker.git"
+  },
+  "keywords": [
+    "video",
+    "time",
+    "redirect"
+  ],
+  "author": "Tuhin Kanti Pal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuhinpal/timeclicker/issues"
+  },
+  "homepage": "https://github.com/tuhinpal/timeclicker#readme"
+}
