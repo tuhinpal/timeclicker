@@ -2,7 +2,11 @@
 
 ### Redirect to different link based on time of a video
 
-## Uses 🐧
+## Uses 🪴
+
+Double click on video on certain time to redirect to different links.
+
+## Installation 🐧
 
 - React
 
@@ -62,12 +66,16 @@
   <html lang="en">
     <body>
       <video id="myVideo" controls autoplay>
-        <source src="/fitoor.mp4" type="video/mp4" />
+        <source
+          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          type="video/mp4"
+        />
       </video>
     </body>
 
     <script type="module">
-      import timeclicker from "/src/index.js";
+      import timeclicker from "https://esm.sh/timeclicker"; // or window.timeclicker
+      // double click while playing the video
 
       timeclicker({
         videoElem: document.getElementById("myVideo"),

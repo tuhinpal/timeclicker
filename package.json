@@ -1,6 +1,6 @@
 {
   "name": "timeclicker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Redirect on a link based on video time",
   "main": "src/index.js",
   "private": false,

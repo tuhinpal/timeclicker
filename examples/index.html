@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Time clicker</title>
     <style>
       body {
         margin: 0;
@@ -18,12 +18,16 @@
   </head>
   <body>
     <video id="myVideo" controls autoplay>
-      <source src="/fitoor.mp4" type="video/mp4" />
+      <source
+        src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        type="video/mp4"
+      />
     </video>
   </body>
 
   <script type="module">
-    import timeclicker from "/src/index.js"; // or window.timeclicker
+    import timeclicker from "https://esm.sh/timeclicker"; // or window.timeclicker
+    // double click while playing the video
 
     timeclicker({
       videoElem: document.getElementById("myVideo"),
