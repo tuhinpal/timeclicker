@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Redirect on a link based on video time",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tuhinpal/timeclicker.git"
